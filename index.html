@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d0f">
+  <meta name="description" content="Undangan Sweet Seventeen Kayla & Melquin, 14 November 2026.">
+  <title>Kayla & Melquin — Sweet Seventeen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+  <div class="grain"></div>
+  <section class="welcome-gate" id="welcomeGate">
+    <div class="gate-card">
+      <p class="eyebrow">YOU ARE INVITED TO</p>
+      <h1>Kayla <i>&</i> Melquin</h1>
+      <p class="gate-sub">SWEET SEVENTEEN · 14 NOVEMBER 2026</p>
+      <div class="gate-line"></div>
+      <div class="step-panel active" id="genderStep">
+        <p class="step-count">01 — YOUR INVITATION</p>
+        <h2>Choose your<br><em>side</em></h2>
+        <div class="gender-options">
+          <button type="button" class="gender-option" data-gender="girls"><span>✦</span> GIRLS</button>
+          <button type="button" class="gender-option" data-gender="boys"><span>✧</span> BOYS</button>
+        </div>
+      </div>
+      <div class="step-panel" id="nameStep">
+        <p class="step-count">02 — A LITTLE INTRODUCTION</p>
+        <h2>What should<br>we <em>call you?</em></h2>
+        <input id="guestName" class="guest-name-input" type="text" maxlength="40" placeholder="Tulis nama kamu di sini" autocomplete="name">
+        <button type="button" class="primary-btn next-btn" id="continueBtn">NEXT <span>↗</span></button>
+        <button type="button" class="back-btn" id="backBtn">← BACK</button>
+      </div>
+      <p class="gate-note">Your invitation will be prepared just for you.</p>
+    </div>
+  </section>
+
+  <div id="invitationContent" class="invitation-content" aria-hidden="true">
+    <header class="topbar">
+      <a class="monogram" href="#home">K<span>&</span>M</a>
+      <span class="top-caption">A NIGHT TO REMEMBER</span>
+      <button class="sound-toggle" id="soundToggle" aria-label="Aktifkan atau matikan musik">♫ <span>Music</span></button>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        <p class="eyebrow">A SPECIAL INVITATION FOR</p>
+        <h1 id="personalGreeting">You</h1>
+        <p class="hero-subtitle">YOU'RE INVITED TO OUR SWEET SEVENTEEN</p>
+        <div class="gold-line"></div>
+        <p class="hero-date">14 <span>·</span> NOVEMBER <span>·</span> 2026</p>
+        <p class="hero-place">JAVA HERITAGE · NAKULA POOL & PRESIDENT SUITE</p>
+        <a class="primary-btn" href="#details">VIEW INVITATION <span>↓</span></a>
+        <div class="hero-photo-wrap"><img src="photos/kayla-melquin-together.jpg" alt="Kayla dan Melquin dalam satu foto"></div>
+        <p class="scroll-mark">SCROLL TO EXPLORE <span>↓</span></p>
+      </section>
+
+      <section class="intro-section section-pad" id="details">
+        <p class="eyebrow">A SPECIAL MILESTONE</p>
+        <h2>Seventeen looks<br><em>good on us.</em></h2>
+        <p class="section-copy">Dengan penuh sukacita, kami mengundangmu untuk merayakan hari spesial Kayla & Melquin. Mari berenang, bermain, makan malam, dan menikmati waktu bersama.</p>
+        <div class="event-facts">
+          <div><span>DATE</span><strong>14 November 2026</strong></div>
+          <div><span>VENUE</span><strong>Java Heritage — Nakula Pool & President Suite</strong></div>
+          <div><span>ACTIVITIES</span><strong>Swimming · Games · Dinner Together</strong></div>
+        </div>
+      </section>
+
+      <section class="schedule-section section-pad">
+        <p class="eyebrow">THE EVENING PROGRAM</p><h2>Our <em>rundown</em></h2>
+        <div class="timeline">
+          <div class="time-item"><time>17.00 – 18.30</time><div><b>Swimming</b><small>Let's enjoy the pool together</small></div></div>
+          <div class="time-item"><time>18.30 – 19.00</time><div><b>Rinse & Get Ready</b><small>Bilas dan bersiap-siap</small></div></div>
+          <div class="time-item"><time>19.00 – 21.00</time><div><b>Dinner Together</b><small>Dinner, games, and good conversations</small></div></div>
+          <div class="time-item"><time>21.00 – 22.00</time><div><b>Chill Time</b><small>Relax and enjoy the night together</small></div></div>
+        </div>
+      </section>
+
+      <section class="packing-section section-pad" id="packing">
+        <p class="eyebrow" id="packingEyebrow">YOUR PREPARATION</p>
+        <h2>Things to <em>bring.</em></h2>
+        <p class="section-copy" id="packingIntro">Checklist kecil supaya tidak ada yang tertinggal.</p>
+        <div class="packing-card">
+          <div class="packing-head"><span>YOUR CHECKLIST</span><span>CHECK AS YOU PACK</span></div>
+          <div id="packingList"></div>
+          <p class="packing-foot">Centang setiap barang yang sudah kamu siapkan.</p>
+        </div>
+      </section>
+
+      <section class="gallery-section section-pad" id="photos">
+        <p class="eyebrow">THE TWO OF US</p><h2>Moments <em>together.</em></h2>
+        <p class="section-copy">A little collection of our favourite moments.</p>
+        <div class="photo-grid" id="togetherGallery"></div>
+      </section>
+
+      <section class="closing-section section-pad">
+        <p class="eyebrow">SAVE THE DATE</p><h2>See you<br><em>there.</em></h2>
+        <p>With love,<br><strong>Kayla & Melquin</strong></p>
+        <a class="text-link" href="#home">BACK TO TOP ↑</a>
+      </section>
+    </main>
+    <footer>MADE WITH LOVE · KAYLA & MELQUIN · 2026</footer>
+  </div>
+  <audio id="bgMusic" src="music/house-of-balloons.mp3" preload="none" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
