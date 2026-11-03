@@ -11,8 +11,7 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white
 body.boys .overnight-section{display:none}body.girls .overnight-section{display:block}
 @media(max-width:650px){.topbar{padding:0 6%;height:62px}.top-caption{font-size:7px;letter-spacing:1px}.hero h1{font-size:78px}.section-pad{padding:78px 7%}.invite-grid{grid-template-columns:1fr}.invite-card{min-height:255px}.event-facts{grid-template-columns:1fr;gap:0}.event-facts div{padding:13px}.time-item{grid-template-columns:105px 1fr;gap:8px}.time-item b{font-size:20px}.photo-grid{grid-template-columns:repeat(2,1fr);gap:7px}.photo-grid img{aspect-ratio:4/5}.shared-gallery{padding:18px}.shared-gallery h3{font-size:25px}.packing-card{padding:20px}.packing-head{font-size:7px}.sound-toggle{padding:7px 9px}.sound-toggle span{display:none}}
 
-/* Boys invitation: show only the shared swimming and dinner activities. */
-body.boys .schedule-section .time-item:not(.swim):not(.dinner){display:none}
+/* Both invitations show the complete shared event rundown. */
 
 /* Personal invitation entry flow */
 body.locked{overflow:hidden}

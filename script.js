@@ -40,6 +40,8 @@ function enterInvitation() {
     $("packingList").innerHTML = boysPacking.map(item => checklistItem(item[0], item[1])).join("");
   }
   renderPhotos();
+  // Start music directly from the visitor's NEXT click (a user gesture).
+  startMusic();
   window.scrollTo({top:0,behavior:"smooth"});
 }
 function checklistItem(label, optional) {
