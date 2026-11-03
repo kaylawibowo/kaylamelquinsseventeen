@@ -1,6 +1,6 @@
 const $ = (id) => document.getElementById(id);
 let selectedGender = "";
-const sleepoverNames = ["echa", "gavrilla freysa", "dhea", "amadhea kartika", "misel", "michella", "benedicta michella pasya"];
+const sleepoverNames = ["echa", "gavrilla freysa", "freysa", "dhea", "amadhea kartika", "misel", "michella", "benedicta michella pasya"];
 const girlsPacking = [
   ["Baju renang"], ["Handuk"], ["Makeup", true], ["Catokan", true],
   ["Alat mandi"], ["Baju untuk dinner"], ["Baju untuk menginap", false, true],
